@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lee.mapper.ReviewMapper">
+
+    <select id="selectReviews" resultType="com.lee.domains.vo.ReviewVo">
+        SELECT w.school, w.title, u.name AS expertName,
+        r.teaching_report_score AS teachingReportScore, r.lesson_plan_score AS lessonPlanScore,
+        r.video_material_score AS videoMaterialScore, r.talent_training_score AS talentTrainingScore,
+        r.course_standard_score AS courseStandardScore, r.textbook_usage_score AS textbookUsageScore,
+        r.overall_score AS overallScore, r.created_at AS createdAt
+        FROM reviews r
+        JOIN works w ON r.work_id = w.work_id
+        JOIN users u ON r.expert_id = u.user_id
+        WHERE w.qualification = 1
+        AND r.review_id IN (
+        SELECT MAX(review_id)
+        FROM reviews
+        GROUP BY work_id
+        )
+        <if test="expertName != null and expertName != ''">
+            AND u.name LIKE CONCAT('%', #{expertName}, '%')
+        </if>
+        <if test="title != null and title != ''">
+            AND w.title LIKE CONCAT('%', #{title}, '%')
+        </if>
+        <if test="school != null and school != ''">
+            AND w.school LIKE CONCAT('%', #{school}, '%')
+        </if>
+        <if test="teamMembers != null and teamMembers != ''">
+            AND w.team_members LIKE CONCAT('%', #{teamMembers}, '%')
+        </if>
+        <if test="category != null and category != ''">
+            AND w.category LIKE CONCAT('%', #{category}, '%')
+        </if>
+        ORDER BY r.created_at DESC
+    </select>
+
+</mapper>

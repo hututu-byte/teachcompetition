@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lee.mapper.AccountMapper">
+
+    <select id="selectAccounts" resultType="com.lee.domains.vo.AccountVo">
+        SELECT u.role, w.school, u.name, w.category, u.username
+        FROM users u
+        LEFT JOIN works w ON u.user_id = w.user_id
+        WHERE 1=1
+        <!-- 新增过滤条件，排除admin身份的记录 -->
+        AND u.role IN ('expert', 'teacher')
+        <if test="role != null and role != ''">
+            AND u.role = #{role}
+        </if>
+        <if test="school != null and school != ''">
+            AND w.school LIKE CONCAT('%', #{school}, '%')
+        </if>
+        <if test="category != null and category != ''">
+            AND w.category = #{category}
+        </if>
+        ORDER BY u.user_id
+    </select>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lee.mapper.WorksMapper">
+
+    <select id="selectWorks" resultType="com.lee.domains.vo.WorkVO">
+        SELECT w.school, w.category, w.title, w.team_members AS teamMembers, w.contact_info AS contactInfo,
+        COALESCE(AVG(r.overall_score), 0) AS averageScore, w.created_at AS createdAt
+        FROM works w
+        LEFT JOIN reviews r ON w.work_id = r.work_id
+        WHERE 1=1
+        <if test="title != null and title != ''">
+            AND w.title LIKE CONCAT('%', #{title}, '%')
+        </if>
+        <if test="school != null and school != ''">
+            AND w.school LIKE CONCAT('%', #{school}, '%')
+        </if>
+        <if test="teamMembers != null and teamMembers != ''">
+            AND w.team_members LIKE CONCAT('%', #{teamMembers}, '%')
+        </if>
+        GROUP BY w.school, w.category, w.title, w.team_members, w.contact_info, w.created_at
+        ORDER BY w.created_at DESC
+    </select>
+
+</mapper>

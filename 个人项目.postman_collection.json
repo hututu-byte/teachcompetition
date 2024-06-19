@@ -1,0 +1,3937 @@
+{
+	"info": {
+		"_postman_id": "d3f8dbd9-2a5f-4243-86c2-04065fa8adcf",
+		"name": "个人项目",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30014389"
+	},
+	"item": [
+		{
+			"name": "根目录",
+			"item": [
+				{
+					"name": "实习测试项目",
+					"item": [
+						{
+							"name": "后台管理系统接口",
+							"item": [
+								{
+									"name": "后台登录管理接口",
+									"item": [
+										{
+											"name": "admin登录接口",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"username\": \"lry\",\r\n    \"password\": \"1234567\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8989/admin/login",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"admin",
+														"login"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "admin登录接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"username\": \"lry\",\r\n    \"password\": \"1234567\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:8989/admin/login",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"admin",
+																"login"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 11:54:07 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"users\": {\n            \"userId\": 1,\n            \"username\": \"lry\",\n            \"password\": null,\n            \"role\": \"teacher\",\n            \"name\": \"lry\",\n            \"avatar\": \"https://img.zcool.cn/community/01a3865ab91314a8012062e3c38ff6.png@1280w_1l_2o_100sh.png\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQwNDcsImlhdCI6MTcxODc5ODA0N30.vCEH4h2pSj4sjigH-q0GSIpHZYoI-Ipc-svydQ5PbDY\"\n    }\n}"
+												},
+												{
+													"name": "admin登录接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"username\": \"lry\",\r\n    \"password\": \"12345677\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:8989/admin/login",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"admin",
+																"login"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 11:57:59 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 505,\n    \"msg\": \"Login failed: Bad credentials\"\n}"
+												}
+											]
+										},
+										{
+											"name": "admin登出接口",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQwNDcsImlhdCI6MTcxODc5ODA0N30.vCEH4h2pSj4sjigH-q0GSIpHZYoI-Ipc-svydQ5PbDY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:8989/admin/logout",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"admin",
+														"logout"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "admin登出接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQwNDcsImlhdCI6MTcxODc5ODA0N30.vCEH4h2pSj4sjigH-q0GSIpHZYoI-Ipc-svydQ5PbDY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/admin/logout",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"admin",
+																"logout"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 11:55:49 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"退出成功\"\n}"
+												},
+												{
+													"name": "admin登出接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/admin/logout",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"admin",
+																"logout"
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 11:57:26 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"timestamp\": \"2024-06-19T11:57:26.067+00:00\",\n    \"status\": 401,\n    \"error\": \"Unauthorized\",\n    \"path\": \"/admin/logout\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "账户管理接口",
+									"item": [
+										{
+											"name": "账号管理查询接口",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:8989/system/account/list?pageNum=1&pageSize=10&role&school&category",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"account",
+														"list"
+													],
+													"query": [
+														{
+															"key": "pageNum",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "10"
+														},
+														{
+															"key": "role",
+															"value": null,
+															"description": "角色"
+														},
+														{
+															"key": "school",
+															"value": null,
+															"description": "学校"
+														},
+														{
+															"key": "category",
+															"value": null,
+															"description": "分类组别"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "账号管理查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQwNDcsImlhdCI6MTcxODc5ODA0N30.vCEH4h2pSj4sjigH-q0GSIpHZYoI-Ipc-svydQ5PbDY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/account/list?pageNum=1&pageSize=10&role&school=东华理工大学&category",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "role",
+																	"value": null
+																},
+																{
+																	"key": "school",
+																	"value": "东华理工大学"
+																},
+																{
+																	"key": "category",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:00:15 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"role\": \"expert\",\n                \"school\": \"东华理工大学\",\n                \"name\": \"专家\",\n                \"category\": \"思政课程组\",\n                \"username\": \"专家\"\n            }\n        ],\n        \"total\": 1,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												},
+												{
+													"name": "账号管理查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQwNDcsImlhdCI6MTcxODc5ODA0N30.vCEH4h2pSj4sjigH-q0GSIpHZYoI-Ipc-svydQ5PbDY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/account/list?pageNum=1&pageSize=10&role=expert&school=东华理工大学&category=思政课程组",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "role",
+																	"value": "expert"
+																},
+																{
+																	"key": "school",
+																	"value": "东华理工大学"
+																},
+																{
+																	"key": "category",
+																	"value": "思政课程组"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:00:57 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"role\": \"expert\",\n                \"school\": \"东华理工大学\",\n                \"name\": \"专家\",\n                \"category\": \"思政课程组\",\n                \"username\": \"专家\"\n            }\n        ],\n        \"total\": 1,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												},
+												{
+													"name": "账号管理查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/account/list?pageNum=1&pageSize=10&role&school&category",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "role",
+																	"value": null
+																},
+																{
+																	"key": "school",
+																	"value": null
+																},
+																{
+																	"key": "category",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:07:43 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"role\": \"teacher\",\n                \"school\": null,\n                \"name\": \"lry\",\n                \"category\": null,\n                \"username\": \"lry\"\n            },\n            {\n                \"role\": \"expert\",\n                \"school\": \"东华理工大学\",\n                \"name\": \"专家\",\n                \"category\": \"思政课程组\",\n                \"username\": \"专家\"\n            },\n            {\n                \"role\": \"expert\",\n                \"school\": \"中国地质大学\",\n                \"name\": \"专家\",\n                \"category\": \"专业技能课程一组\",\n                \"username\": \"专家\"\n            },\n            {\n                \"role\": \"teacher\",\n                \"school\": \"Some School\",\n                \"name\": \"New User\",\n                \"category\": null,\n                \"username\": \"new_user\"\n            }\n        ],\n        \"total\": 4,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												}
+											]
+										},
+										{
+											"name": "账户新增接口",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\": \"New User\",\r\n    \"school\": \"Some School\",\r\n    \"role\": \"teacher\", \r\n    \"category\": \"思政课程组\", \r\n    \"username\": \"new_user\",\r\n    \"password\": \"123456\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8989/system/account/add",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"account",
+														"add"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "账户新增接口",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"name\": \"New User\",\r\n    \"school\": \"Some School\",\r\n    \"role\": \"teacher\", \r\n    \"category\": \"思政课程组\", \r\n    \"username\": \"new_user\",\r\n    \"password\": \"123456\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:8989/system/account/add",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"add"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:02:18 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\"\n}"
+												}
+											]
+										},
+										{
+											"name": "账户修改接口",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\": \"Updated User\",\r\n    \"school\": \"Updated School\",\r\n    \"role\": \"teacher\",\r\n    \"username\": \"updated_user\",\r\n    \"password\": \"a12345678\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8989/system/account/update/:userId",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"account",
+														"update",
+														":userId"
+													],
+													"variable": [
+														{
+															"key": "userId",
+															"value": "5",
+															"description": "用户id"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "账户修改接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"name\": \"Updated User\",\r\n    \"school\": \"Updated School\",\r\n    \"role\": \"teacher\",\r\n    \"username\": \"updated_user\",\r\n    \"password\": \"a12345678\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:8989/system/account/update/:userId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"update",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId",
+																	"value": "5"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:29:45 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\"\n}"
+												},
+												{
+													"name": "账户修改接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"name\": \"Updated User\",\r\n    \"school\": \"Updated School\",\r\n    \"role\": \"teacher\",\r\n    \"username\": \"updated_user\",\r\n    \"password\": \"a12345678\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:8989/system/account/update/:userId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"update",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId",
+																	"value": "7"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:29:56 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 502,\n    \"msg\": \"用户不存在\"\n}"
+												}
+											]
+										},
+										{
+											"name": "账户删除接口",
+											"request": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:8989/system/account/delete/:userId",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"account",
+														"delete",
+														":userId"
+													],
+													"variable": [
+														{
+															"key": "userId",
+															"value": "6",
+															"description": "用户id"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "账户删除接口",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/account/delete/:userId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"delete",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId",
+																	"value": "6"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:31:20 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": \"删除成功\"\n}"
+												},
+												{
+													"name": "账户删除接口",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/account/delete/:userId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"account",
+																"delete",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId",
+																	"value": "8"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:31:29 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 500,\n    \"msg\": \"删除用户失败\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "作品管理接口",
+									"item": [
+										{
+											"name": "作品查询接口",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:8989/system/works/list?pageNum=1&pageSize=10&title=&school=&teamMembers=",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"works",
+														"list"
+													],
+													"query": [
+														{
+															"key": "pageNum",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "10"
+														},
+														{
+															"key": "title",
+															"value": "",
+															"description": "作品标题"
+														},
+														{
+															"key": "school",
+															"value": "",
+															"description": "学校"
+														},
+														{
+															"key": "teamMembers",
+															"value": "",
+															"description": "小组成员"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "作品查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/works/list?pageNum=1&pageSize=10&title&school&teamMembers",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"works",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "title",
+																	"value": null
+																},
+																{
+																	"key": "school",
+																	"value": null
+																},
+																{
+																	"key": "teamMembers",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:32:38 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"school\": \"Some School\",\n                \"category\": null,\n                \"title\": null,\n                \"teamMembers\": null,\n                \"contactInfo\": null,\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-19T20:02:18.000+00:00\"\n            },\n            {\n                \"school\": \"东华理工大学\",\n                \"category\": \"专业技能课程二组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"lry，mark\",\n                \"contactInfo\": \"13707992562\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:40:20.000+00:00\"\n            },\n            {\n                \"school\": \"东华理工大学\",\n                \"category\": \"思政课程组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"lry，mark\",\n                \"contactInfo\": \"15297995139\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:37:30.000+00:00\"\n            },\n            {\n                \"school\": \"\",\n                \"category\": \"\",\n                \"title\": \"\",\n                \"teamMembers\": \"\",\n                \"contactInfo\": \"\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:31:58.000+00:00\"\n            },\n            {\n                \"school\": \"Updated School\",\n                \"category\": \"\",\n                \"title\": \"\",\n                \"teamMembers\": \"\",\n                \"contactInfo\": \"\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:29:55.000+00:00\"\n            },\n            {\n                \"school\": \"\",\n                \"category\": \"\",\n                \"title\": \"\",\n                \"teamMembers\": \"\",\n                \"contactInfo\": \"\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:27:54.000+00:00\"\n            },\n            {\n                \"school\": \"\",\n                \"category\": \"\",\n                \"title\": \"\",\n                \"teamMembers\": \"\",\n                \"contactInfo\": \"\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T20:50:49.000+00:00\"\n            },\n            {\n                \"school\": \"中国地质大学\",\n                \"category\": \"专业技能课程一组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"ljc\",\n                \"contactInfo\": \"13707992562\",\n                \"averageScore\": 90.2,\n                \"createdAt\": \"2024-06-18T19:32:13.000+00:00\"\n            },\n            {\n                \"school\": \"东华理工大学\",\n                \"category\": \"思政课程组\",\n                \"title\": \"测试\",\n                \"teamMembers\": \"lry\",\n                \"contactInfo\": \"15297995139\",\n                \"averageScore\": 92.875,\n                \"createdAt\": \"2024-06-16T15:12:22.000+00:00\"\n            }\n        ],\n        \"total\": 9,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												},
+												{
+													"name": "作品查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/works/list?pageNum=1&pageSize=10&title=测试2&school&teamMembers",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"works",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "title",
+																	"value": "测试2"
+																},
+																{
+																	"key": "school",
+																	"value": null
+																},
+																{
+																	"key": "teamMembers",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:32:52 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"school\": \"东华理工大学\",\n                \"category\": \"专业技能课程二组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"lry，mark\",\n                \"contactInfo\": \"13707992562\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:40:20.000+00:00\"\n            },\n            {\n                \"school\": \"东华理工大学\",\n                \"category\": \"思政课程组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"lry，mark\",\n                \"contactInfo\": \"15297995139\",\n                \"averageScore\": 0,\n                \"createdAt\": \"2024-06-18T21:37:30.000+00:00\"\n            },\n            {\n                \"school\": \"中国地质大学\",\n                \"category\": \"专业技能课程一组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"ljc\",\n                \"contactInfo\": \"13707992562\",\n                \"averageScore\": 90.2,\n                \"createdAt\": \"2024-06-18T19:32:13.000+00:00\"\n            }\n        ],\n        \"total\": 3,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												},
+												{
+													"name": "作品查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/works/list?pageNum=1&pageSize=10&title=测试2&school=中国地质大学&teamMembers=ljc",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"works",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "title",
+																	"value": "测试2"
+																},
+																{
+																	"key": "school",
+																	"value": "中国地质大学"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "ljc"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:33:18 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"school\": \"中国地质大学\",\n                \"category\": \"专业技能课程一组\",\n                \"title\": \"测试2\",\n                \"teamMembers\": \"ljc\",\n                \"contactInfo\": \"13707992562\",\n                \"averageScore\": 90.2,\n                \"createdAt\": \"2024-06-18T19:32:13.000+00:00\"\n            }\n        ],\n        \"total\": 1,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "评审管理接口",
+									"item": [
+										{
+											"name": "评价查询接口",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:8989/system/reviews/list?pageNum=1&pageSize=10&expertName=&title=&school=&teamMembers=&category",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"reviews",
+														"list"
+													],
+													"query": [
+														{
+															"key": "pageNum",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "10"
+														},
+														{
+															"key": "expertName",
+															"value": "",
+															"description": "评委名"
+														},
+														{
+															"key": "title",
+															"value": "",
+															"description": "标题"
+														},
+														{
+															"key": "school",
+															"value": "",
+															"description": "学校"
+														},
+														{
+															"key": "teamMembers",
+															"value": "",
+															"description": "小组成员"
+														},
+														{
+															"key": "category",
+															"value": null,
+															"description": "分类组别"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "评价查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/reviews/list?pageNum=1&pageSize=10&expertName&title&school&teamMembers&category",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"reviews",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "expertName",
+																	"value": null
+																},
+																{
+																	"key": "title",
+																	"value": null
+																},
+																{
+																	"key": "school",
+																	"value": null
+																},
+																{
+																	"key": "teamMembers",
+																	"value": null
+																},
+																{
+																	"key": "category",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:34:46 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"school\": \"中国地质大学\",\n                \"title\": \"测试2\",\n                \"expertName\": \"专家\",\n                \"teachingReportScore\": 15,\n                \"lessonPlanScore\": 20,\n                \"videoMaterialScore\": 35,\n                \"talentTrainingScore\": 7,\n                \"courseStandardScore\": 7,\n                \"textbookUsageScore\": 4,\n                \"overallScore\": 90.2,\n                \"createdAt\": \"2024-06-18T19:35:53.000+00:00\"\n            },\n            {\n                \"school\": \"东华理工大学\",\n                \"title\": \"测试\",\n                \"expertName\": \"专家\",\n                \"teachingReportScore\": 18.5,\n                \"lessonPlanScore\": 19,\n                \"videoMaterialScore\": 35,\n                \"talentTrainingScore\": 7.5,\n                \"courseStandardScore\": 7,\n                \"textbookUsageScore\": 3.5,\n                \"overallScore\": 90.5,\n                \"createdAt\": \"2024-06-18T13:29:52.000+00:00\"\n            }\n        ],\n        \"total\": 2,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												},
+												{
+													"name": "评价查询接口",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:8989/system/reviews/list?pageNum=1&pageSize=10&expertName=专家&title=测试2&school=中国地质大学&teamMembers=ljc&category",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "8989",
+															"path": [
+																"system",
+																"reviews",
+																"list"
+															],
+															"query": [
+																{
+																	"key": "pageNum",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "10"
+																},
+																{
+																	"key": "expertName",
+																	"value": "专家"
+																},
+																{
+																	"key": "title",
+																	"value": "测试2"
+																},
+																{
+																	"key": "school",
+																	"value": "中国地质大学"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "ljc"
+																},
+																{
+																	"key": "category",
+																	"value": null
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:35:54 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"records\": [\n            {\n                \"school\": \"中国地质大学\",\n                \"title\": \"测试2\",\n                \"expertName\": \"专家\",\n                \"teachingReportScore\": 15,\n                \"lessonPlanScore\": 20,\n                \"videoMaterialScore\": 35,\n                \"talentTrainingScore\": 7,\n                \"courseStandardScore\": 7,\n                \"textbookUsageScore\": 4,\n                \"overallScore\": 90.2,\n                \"createdAt\": \"2024-06-18T19:35:53.000+00:00\"\n            }\n        ],\n        \"total\": 1,\n        \"size\": 10,\n        \"current\": 1,\n        \"orders\": [],\n        \"optimizeCountSql\": false,\n        \"searchCount\": true,\n        \"countId\": null,\n        \"maxLimit\": null,\n        \"pages\": 1\n    }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "导出excel文件接口",
+									"item": [
+										{
+											"name": "评价文件导出接口",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8989/system/export/reviews",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8989",
+													"path": [
+														"system",
+														"export",
+														"reviews"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "前台页面系统接口",
+							"item": [
+								{
+									"name": "前台登录管理",
+									"item": [
+										{
+											"name": "users登录接口",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"username\": \"lry\",\r\n  \"password\": \"1234567\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:7777/users/login",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"login"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "users登录接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n  \"username\": \"lry\",\r\n  \"password\": \"1234567\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/login",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"login"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:37:10 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"users\": {\n            \"userId\": 1,\n            \"username\": \"lry\",\n            \"password\": null,\n            \"role\": \"teacher\",\n            \"name\": \"lry\",\n            \"avatar\": \"https://img.zcool.cn/community/01a3865ab91314a8012062e3c38ff6.png@1280w_1l_2o_100sh.png\"\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzY2MzAsImlhdCI6MTcxODgwMDYzMH0.IHmj9CQsOwllFjJbNLCzZf7iOwLL4aTKpWAfR4LK77k\"\n    }\n}"
+												},
+												{
+													"name": "users登录接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n  \"username\": \"lry\",\r\n  \"password\": \"12345678\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/login",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"login"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:37:41 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 505,\n    \"msg\": \"Login failed: Bad credentials\"\n}"
+												}
+											]
+										},
+										{
+											"name": "users登出接口",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:7777/users/logout",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"logout"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "users登出接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/logout",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"logout"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:39:15 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"退出成功\"\n}"
+												},
+												{
+													"name": "users登出接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/logout",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"logout"
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:39:24 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"timestamp\": \"2024-06-19T12:39:24.112+00:00\",\n    \"status\": 401,\n    \"error\": \"Unauthorized\",\n    \"path\": \"/users/logout\"\n}"
+												}
+											]
+										},
+										{
+											"name": "users修改密码接口",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:7777/users/changePassword?username=lry&oldPassword=12345678&newPassword=12345678",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"changePassword"
+													],
+													"query": [
+														{
+															"key": "username",
+															"value": "lry"
+														},
+														{
+															"key": "oldPassword",
+															"value": "12345678"
+														},
+														{
+															"key": "newPassword",
+															"value": "12345678"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "users修改密码接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/changePassword?username=lry&oldPassword=1234567&newPassword=12345678",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"changePassword"
+															],
+															"query": [
+																{
+																	"key": "username",
+																	"value": "lry"
+																},
+																{
+																	"key": "oldPassword",
+																	"value": "1234567"
+																},
+																{
+																	"key": "newPassword",
+																	"value": "12345678"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:40:18 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": \"密码修改成功\"\n}"
+												},
+												{
+													"name": "users修改密码接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/changePassword?username=lry&oldPassword=1234567&newPassword=12345678",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"changePassword"
+															],
+															"query": [
+																{
+																	"key": "username",
+																	"value": "lry"
+																},
+																{
+																	"key": "oldPassword",
+																	"value": "1234567"
+																},
+																{
+																	"key": "newPassword",
+																	"value": "12345678"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:40:32 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 506,\n    \"msg\": \"输入与旧密码不一致\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "我要报名",
+									"item": [
+										{
+											"name": "上传作品",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"value": "multipart/form-data",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "title",
+															"value": "111",
+															"type": "text"
+														},
+														{
+															"key": "category",
+															"value": "思政课程组",
+															"type": "text"
+														},
+														{
+															"key": "school",
+															"value": "东华理工大学",
+															"type": "text"
+														},
+														{
+															"key": "teamMembers",
+															"value": "lll,bbb,ccc",
+															"type": "text"
+														},
+														{
+															"key": "contactInfo",
+															"value": "13707992562",
+															"type": "text"
+														},
+														{
+															"key": "userId",
+															"value": "5",
+															"type": "text"
+														},
+														{
+															"key": "files[教案]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[教学实施报告]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[评分表]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[设计方案]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[研究报告]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[项目计划]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "videos",
+															"type": "file",
+															"src": "/F:/OBSvedio/2024-03-31 18-21-06.mp4"
+														}
+													]
+												},
+												"url": {
+													"raw": "http://localhost:7777/users/work/upload",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"work",
+														"upload"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "上传作品",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															},
+															{
+																"key": "Content-Type",
+																"value": "multipart/form-data",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "formdata",
+															"formdata": [
+																{
+																	"key": "title",
+																	"value": "111",
+																	"type": "text"
+																},
+																{
+																	"key": "category",
+																	"value": "思政课程组",
+																	"type": "text"
+																},
+																{
+																	"key": "school",
+																	"value": "东华理工大学",
+																	"type": "text"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "lll,bbb,ccc",
+																	"type": "text"
+																},
+																{
+																	"key": "contactInfo",
+																	"value": "13707992562",
+																	"type": "text"
+																},
+																{
+																	"key": "userId",
+																	"value": "5",
+																	"type": "text"
+																},
+																{
+																	"key": "files[教案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[教学实施报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[评分表]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[设计方案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[研究报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[项目计划]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "videos",
+																	"type": "file",
+																	"src": "/F:/OBSvedio/2024-03-31 18-21-06.mp4"
+																}
+															]
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/work/upload",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"work",
+																"upload"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:52:08 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": \"作品信息、文件和视频上传成功\"\n}"
+												},
+												{
+													"name": "上传作品",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															},
+															{
+																"key": "Content-Type",
+																"value": "multipart/form-data",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "formdata",
+															"formdata": [
+																{
+																	"key": "title",
+																	"value": "111",
+																	"type": "text"
+																},
+																{
+																	"key": "category",
+																	"value": "思政课程组",
+																	"type": "text"
+																},
+																{
+																	"key": "school",
+																	"value": "东华理工大学",
+																	"type": "text"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "lll,bbb,ccc",
+																	"type": "text"
+																},
+																{
+																	"key": "contactInfo",
+																	"value": "13707992562",
+																	"type": "text"
+																},
+																{
+																	"key": "userId",
+																	"value": "5",
+																	"type": "text"
+																},
+																{
+																	"key": "files[教案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[教学实施报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[评分表]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[设计方案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[研究报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.docx"
+																},
+																{
+																	"key": "files[项目计划]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "videos",
+																	"type": "file",
+																	"src": "/F:/OBSvedio/2024-03-31 18-21-06.mp4"
+																}
+															]
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/work/upload",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"work",
+																"upload"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:55:37 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 507,\n    \"msg\": \"文件类型必须为PDF\"\n}"
+												}
+											]
+										},
+										{
+											"name": "修改作品",
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													},
+													{
+														"key": "Content-Type",
+														"value": "multipart/form-data",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "title",
+															"value": "222",
+															"type": "text"
+														},
+														{
+															"key": "category",
+															"value": "思政课程组",
+															"type": "text"
+														},
+														{
+															"key": "school",
+															"value": "中国地质大学",
+															"type": "text"
+														},
+														{
+															"key": "teamMembers",
+															"value": "lry",
+															"type": "text"
+														},
+														{
+															"key": "contactInfo",
+															"value": "15297995139",
+															"type": "text"
+														},
+														{
+															"key": "userId",
+															"value": "5",
+															"type": "text"
+														},
+														{
+															"key": "files[教案]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[教学实施报告]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[评分表]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[设计方案]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[研究报告]",
+															"type": "file",
+															"src": "/E:/Depstock/Java简历.pdf"
+														},
+														{
+															"key": "files[项目计划]",
+															"type": "file",
+															"src": "/E:/Depstock/2024年上半年英语六级笔试准考证(360313200407125013).pdf"
+														},
+														{
+															"key": "videos",
+															"type": "file",
+															"src": "/F:/OBSvedio/2024-03-31 18-21-06.mp4"
+														},
+														{
+															"key": "workId",
+															"value": "13",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "http://localhost:7777/users/work/update",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"work",
+														"update"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "修改作品",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															},
+															{
+																"key": "Content-Type",
+																"value": "multipart/form-data",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "formdata",
+															"formdata": [
+																{
+																	"key": "title",
+																	"value": "222",
+																	"type": "text"
+																},
+																{
+																	"key": "category",
+																	"value": "思政课程组",
+																	"type": "text"
+																},
+																{
+																	"key": "school",
+																	"value": "中国地质大学",
+																	"type": "text"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "lry",
+																	"type": "text"
+																},
+																{
+																	"key": "contactInfo",
+																	"value": "15297995139",
+																	"type": "text"
+																},
+																{
+																	"key": "userId",
+																	"value": "5",
+																	"type": "text"
+																},
+																{
+																	"key": "files[教案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[教学实施报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[评分表]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[设计方案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[研究报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[项目计划]",
+																	"type": "file",
+																	"src": "/E:/Depstock/2024年上半年英语六级笔试准考证(360313200407125013).pdf"
+																},
+																{
+																	"key": "videos",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "workId",
+																	"value": "13",
+																	"type": "text"
+																}
+															]
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/work/update",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"work",
+																"update"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:54:42 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 512,\n    \"msg\": \"视频文件类型必须为MP4\"\n}"
+												},
+												{
+													"name": "修改作品",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															},
+															{
+																"key": "Content-Type",
+																"value": "multipart/form-data",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "formdata",
+															"formdata": [
+																{
+																	"key": "title",
+																	"value": "222",
+																	"type": "text"
+																},
+																{
+																	"key": "category",
+																	"value": "思政课程组",
+																	"type": "text"
+																},
+																{
+																	"key": "school",
+																	"value": "中国地质大学",
+																	"type": "text"
+																},
+																{
+																	"key": "teamMembers",
+																	"value": "lry",
+																	"type": "text"
+																},
+																{
+																	"key": "contactInfo",
+																	"value": "15297995139",
+																	"type": "text"
+																},
+																{
+																	"key": "userId",
+																	"value": "5",
+																	"type": "text"
+																},
+																{
+																	"key": "files[教案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[教学实施报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[评分表]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[设计方案]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[研究报告]",
+																	"type": "file",
+																	"src": "/E:/Depstock/Java简历.pdf"
+																},
+																{
+																	"key": "files[项目计划]",
+																	"type": "file",
+																	"src": "/E:/Depstock/2024年上半年英语六级笔试准考证(360313200407125013).pdf"
+																},
+																{
+																	"key": "videos",
+																	"type": "file",
+																	"src": "/F:/OBSvedio/2024-03-31 18-21-06.mp4"
+																},
+																{
+																	"key": "workId",
+																	"value": "13",
+																	"type": "text"
+																}
+															]
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/work/update",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"work",
+																"update"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:55:11 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": \"作品信息、文件和视频修改成功\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "评委评分",
+									"item": [
+										{
+											"name": "评分接口",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"workId\": 5,\r\n  \"expertId\": 2,\r\n  \"teachingReportScore\": 18.5,\r\n  \"lessonPlanScore\": 19,\r\n  \"videoMaterialScore\": 35,\r\n  \"talentTrainingScore\": 7.5,\r\n  \"courseStandardScore\": 7,\r\n  \"textbookUsageScore\": 3.5,\r\n  \"comments\": \"非常优秀的作品\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:7777/users/reviews/save",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"reviews",
+														"save"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "评分接口",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n  \"workId\": 5,\r\n  \"expertId\": 2,\r\n  \"teachingReportScore\": 18.5,\r\n  \"lessonPlanScore\": 19,\r\n  \"videoMaterialScore\": 35,\r\n  \"talentTrainingScore\": 7.5,\r\n  \"courseStandardScore\": 7,\r\n  \"textbookUsageScore\": 3.5,\r\n  \"comments\": \"非常优秀的作品\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "http://localhost:7777/users/reviews/save",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"reviews",
+																"save"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:41:53 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"reviewId\": 6,\n        \"workId\": 5,\n        \"expertId\": 2,\n        \"overallScore\": 90.5,\n        \"teachingReportScore\": 18.5,\n        \"lessonPlanScore\": 19,\n        \"videoMaterialScore\": 35,\n        \"talentTrainingScore\": 7.5,\n        \"courseStandardScore\": 7,\n        \"textbookUsageScore\": 3.5,\n        \"comments\": \"非常优秀的作品\",\n        \"createdAt\": \"2024-06-19T20:41:53.504\"\n    }\n}"
+												}
+											]
+										},
+										{
+											"name": "专家具体作品评分查询",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:7777/users/reviews/:workId/:expertId",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"reviews",
+														":workId",
+														":expertId"
+													],
+													"variable": [
+														{
+															"key": "workId",
+															"value": "1",
+															"description": "作品id"
+														},
+														{
+															"key": "expertId",
+															"value": "2",
+															"description": "专家id"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "专家具体作品评分查询",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/reviews/:workId/:expertId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"reviews",
+																":workId",
+																":expertId"
+															],
+															"variable": [
+																{
+																	"key": "workId",
+																	"value": "1",
+																	"description": "作品id"
+																},
+																{
+																	"key": "expertId",
+																	"value": "2",
+																	"description": "专家id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:42:59 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": {\n        \"reviewId\": 4,\n        \"workId\": 1,\n        \"expertId\": 2,\n        \"overallScore\": 90.5,\n        \"teachingReportScore\": 18.5,\n        \"lessonPlanScore\": 19,\n        \"videoMaterialScore\": 35,\n        \"talentTrainingScore\": 7.5,\n        \"courseStandardScore\": 7,\n        \"textbookUsageScore\": 3.5,\n        \"comments\": \"非常优秀的作品\",\n        \"createdAt\": \"2024-06-18T13:29:52\"\n    }\n}"
+												},
+												{
+													"name": "专家具体作品评分查询",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/reviews/:workId/:expertId",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"reviews",
+																":workId",
+																":expertId"
+															],
+															"variable": [
+																{
+																	"key": "workId",
+																	"value": "1"
+																},
+																{
+																	"key": "expertId",
+																	"value": "3"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:43:19 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 403,\n    \"msg\": \"评分记录不存在\"\n}"
+												}
+											]
+										},
+										{
+											"name": "作品评分主页面",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "http://localhost:7777/users/works/reviews",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "7777",
+													"path": [
+														"users",
+														"works",
+														"reviews"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "作品评分主页面",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJscnkiLCJleHAiOjE3MTg4MzQ0OTIsImlhdCI6MTcxODc5ODQ5Mn0.NrRD-h0_OctrALxPiSs7hhd81TLOE2qcM3x72BBcWzY",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/works/reviews",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"works",
+																"reviews"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:43:51 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"code\": 200,\n    \"msg\": \"操作成功\",\n    \"data\": [\n        {\n            \"workId\": 1,\n            \"workName\": \"测试\",\n            \"createdAt\": \"2024-06-16T07:12:22.000+00:00\",\n            \"score\": 90.5,\n            \"reviewStatus\": 1\n        },\n        {\n            \"workId\": 2,\n            \"workName\": \"测试2\",\n            \"createdAt\": \"2024-06-18T11:32:13.000+00:00\",\n            \"score\": 90.2,\n            \"reviewStatus\": 1\n        },\n        {\n            \"workId\": 3,\n            \"workName\": \"\",\n            \"createdAt\": \"2024-06-18T12:50:49.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        },\n        {\n            \"workId\": 4,\n            \"workName\": \"\",\n            \"createdAt\": \"2024-06-18T13:27:54.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        },\n        {\n            \"workId\": 5,\n            \"workName\": \"\",\n            \"createdAt\": \"2024-06-18T13:29:55.000+00:00\",\n            \"score\": 90.5,\n            \"reviewStatus\": 1\n        },\n        {\n            \"workId\": 6,\n            \"workName\": \"\",\n            \"createdAt\": \"2024-06-18T13:31:58.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        },\n        {\n            \"workId\": 7,\n            \"workName\": \"测试2\",\n            \"createdAt\": \"2024-06-18T13:37:30.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        },\n        {\n            \"workId\": 8,\n            \"workName\": \"测试2\",\n            \"createdAt\": \"2024-06-18T13:40:20.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        },\n        {\n            \"workId\": 9,\n            \"workName\": null,\n            \"createdAt\": \"2024-06-19T12:02:18.000+00:00\",\n            \"score\": null,\n            \"reviewStatus\": 0\n        }\n    ]\n}"
+												},
+												{
+													"name": "作品评分主页面",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "http://localhost:7777/users/works/reviews",
+															"protocol": "http",
+															"host": [
+																"localhost"
+															],
+															"port": "7777",
+															"path": [
+																"users",
+																"works",
+																"reviews"
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Wed, 19 Jun 2024 12:44:01 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"timestamp\": \"2024-06-19T12:44:01.237+00:00\",\n    \"status\": 401,\n    \"error\": \"Unauthorized\",\n    \"path\": \"/users/works/reviews\"\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
